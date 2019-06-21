@@ -82,8 +82,8 @@ h1 {font-size: 2.25em;}
 .site-title, .page-title {font-weight: normal;}
 .page-description, .page-links a {font-weight: bold;}
 .site-description {letter-spacing: -.01em;}
-.post-navigation .post-title, .entry-title, .not-found .page-title, .error-404 .page-title, .comments-title, blockquote {hyphens: auto;word-break: break-word;}
-@media only screen and (min-width: 768px) {.entry-title {hyphens: none;}}
+.post-navigation .post-title, .entry-title, .not-found .page-title, .error-404 .page-title, .comments-title, blockquote {-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;word-break: break-word;word-wrap: break-word;}
+@media only screen and (min-width: 768px) {.entry-title {-webkit-hyphens: none;-moz-hyphens: none;-ms-hyphens: none;hyphens: none;}}
 p {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 dfn, cite, em, i {font-style: italic;}
 blockquote cite {font-size: .71111em;font-style: normal;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;}
@@ -278,7 +278,7 @@ body.page .main-navigation {display: block;}
 .site-header.featured-image .site-branding-container {margin-bottom: auto;}
 @media only screen and (min-width: 768px) {.site-header {margin: 0;padding: 3rem 0;}
 	.site-header.featured-image {min-height: 100vh;margin-bottom: 3rem;}}
-.site-branding {color: #767676;position: relative;}
+.site-branding {color: #767676;-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;position: relative;word-wrap: break-word;}
 @media only screen and (min-width: 768px) {.site-branding {margin: 0 calc(10% + 60px);}}
 .site-logo {position: relative;z-index: 999;margin-bottom: calc(.66 * 1rem);}
 @media only screen and (min-width: 768px) {.site-logo {margin-bottom: 0;position: absolute;right: calc(100% + ( 1.25 * 1rem ));top: 4px;z-index: 999;}}
@@ -402,7 +402,7 @@ body.page .main-navigation {display: block;}
 .author-bio .author-description .author-link:hover {color: #005177;text-decoration: none;}
 .comment-content a {word-wrap: break-word;}
 .bypostauthor {display: block;}
-.comments-area {margin: calc(2 * 1rem) 1rem;}
+.comments-area {-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;margin: calc(2 * 1rem) 1rem;word-wrap: break-word;}
 @media only screen and (min-width: 768px) {.comments-area {max-width: calc(8 * ( 100vw / 12 ) - 28px);}}
 @media only screen and (min-width: 1168px) {.comments-area {max-width: calc(6 * ( 100vw / 12 ) - 28px);}}
 @media only screen and (min-width: 768px) {.comments-area {margin: calc(3 * 1rem) calc(10% + 60px);}}
@@ -488,9 +488,9 @@ body.page .main-navigation {display: block;}
 #colophon .widget-area, #colophon .site-info {margin: calc(2 * 1rem) 1rem;}
 @media only screen and (min-width: 768px) {#colophon .widget-area, #colophon .site-info {margin: calc(3 * 1rem) calc(10% + 60px);}}
 #colophon .widget-column {display: flex;flex-wrap: wrap;}
-#colophon .widget-column .widget {width: 100%;}
+#colophon .widget-column .widget {-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;width: 100%;word-wrap: break-word;}
 @media only screen and (min-width: 1168px) {#colophon .widget-column .widget {margin-right: calc(3 * 1rem);width: calc(50% - ( 3 * 1rem ));}}
-#colophon .site-info {color: #767676;}
+#colophon .site-info {color: #767676;-webkit-hyphens: auto;-moz-hyphens: auto;-ms-hyphens: auto;hyphens: auto;word-wrap: break-word;}
 #colophon .site-info a {color: inherit;}
 #colophon .site-info a:hover {text-decoration: none;color: #0073aa;}
 #colophon .site-info .imprint, #colophon .site-info .privacy-policy-link {margin-right: 1rem;}
@@ -583,7 +583,7 @@ body.page .main-navigation {display: block;}
 @media only screen and (min-width: 768px) {.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {margin-left: 0;margin-right: 0;}}
 @media only screen and (min-width: 768px) {.entry .entry-content .wp-block-pullquote.is-style-solid-color.alignright, .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignleft {padding: 1rem calc(2 * 1rem);}}
 @media only screen and (min-width: 768px) {.entry .entry-content .wp-block-pullquote.is-style-solid-color.alignfull {padding-left: calc(10% + 58px + ( 2 * 1rem ));padding-right: calc(10% + 58px + ( 2 * 1rem ));}}
-.entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large) {border-left: 2px solid #0073aa;padding-top: 0;padding-bottom: 0;}
+.entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large) {border-width: 2px;border-color: #0073aa;padding-top: 0;padding-bottom: 0;}
 .entry .entry-content .wp-block-quote p {font-size: 1em;font-style: normal;line-height: 1.8;}
 .entry .entry-content .wp-block-quote cite {font-size: calc(1rem / ( 1.25 * 1.125 ));}
 .entry .entry-content .wp-block-quote.is-large, .entry .entry-content .wp-block-quote.is-style-large {margin: 1rem 0;padding: 0;border-left: none;}
@@ -633,13 +633,10 @@ body.page .main-navigation {display: block;}
 .entry .entry-content .wp-block-file .wp-block-file__button:focus {background: #111;outline: thin dotted;outline-offset: -4px;}
 .entry .entry-content .wp-block-code {border-radius: 0;}
 .entry .entry-content .wp-block-code code {font-size: 1.125em;white-space: pre-wrap;word-break: break-word;}
-.entry .entry-content .wp-block-columns.alignfull {padding-left: 1rem;padding-right: 1rem;}
-@media only screen and (min-width: 600px) {.entry .entry-content .wp-block-columns {flex-wrap: nowrap;}}
-@media only screen and (min-width: 768px) {.entry .entry-content .wp-block-columns .wp-block-column > *:first-child {margin-top: 0;}
-	.entry .entry-content .wp-block-columns .wp-block-column > *:last-child {margin-bottom: 0;}
-	.entry .entry-content .wp-block-columns[class*='has-'] > * {margin-right: 1rem;}
-	.entry .entry-content .wp-block-columns[class*='has-'] > *:last-child {margin-right: 0;}
-	.entry .entry-content .wp-block-columns.alignfull, .entry .entry-content .wp-block-columns.alignfull .wp-block-column {padding-left: calc(2 * 1rem);padding-right: calc(2 * 1rem);}}
+.entry .entry-content .wp-block-columns .wp-block-column > *:first-child {margin-top: 0;}
+.entry .entry-content .wp-block-columns .wp-block-column > *:last-child {margin-bottom: 0;}
+@media only screen and (min-width: 768px) {.entry .entry-content .wp-block-columns {flex-wrap: nowrap;}
+	.entry .entry-content .wp-block-columns .wp-block-column:not(:first-child) {margin-left: 32px;}}
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-weight: bold;}
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {font-weight: normal;}
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment, .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-date, .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-excerpt p {font-size: inherit;}
@@ -649,18 +646,18 @@ body.page .main-navigation {display: block;}
 .entry .entry-content .has-large-font-size {font-size: 1.6875em;}
 .entry .entry-content .has-huge-font-size {font-size: 2.25em;}
 .entry .entry-content .has-primary-background-color, .entry .entry-content .has-secondary-background-color, .entry .entry-content .has-dark-gray-background-color, .entry .entry-content .has-light-gray-background-color {color: #fff;}
-.entry .entry-content .has-primary-background-color p, .entry .entry-content .has-primary-background-color h1, .entry .entry-content .has-primary-background-color h2, .entry .entry-content .has-primary-background-color h3, .entry .entry-content .has-primary-background-color h4, .entry .entry-content .has-primary-background-color h5, .entry .entry-content .has-primary-background-color h6, .entry .entry-content .has-primary-background-color a, .entry .entry-content .has-secondary-background-color p, .entry .entry-content .has-secondary-background-color h1, .entry .entry-content .has-secondary-background-color h2, .entry .entry-content .has-secondary-background-color h3, .entry .entry-content .has-secondary-background-color h4, .entry .entry-content .has-secondary-background-color h5, .entry .entry-content .has-secondary-background-color h6, .entry .entry-content .has-secondary-background-color a, .entry .entry-content .has-dark-gray-background-color p, .entry .entry-content .has-dark-gray-background-color h1, .entry .entry-content .has-dark-gray-background-color h2, .entry .entry-content .has-dark-gray-background-color h3, .entry .entry-content .has-dark-gray-background-color h4, .entry .entry-content .has-dark-gray-background-color h5, .entry .entry-content .has-dark-gray-background-color h6, .entry .entry-content .has-dark-gray-background-color a, .entry .entry-content .has-light-gray-background-color p, .entry .entry-content .has-light-gray-background-color h1, .entry .entry-content .has-light-gray-background-color h2, .entry .entry-content .has-light-gray-background-color h3, .entry .entry-content .has-light-gray-background-color h4, .entry .entry-content .has-light-gray-background-color h5, .entry .entry-content .has-light-gray-background-color h6, .entry .entry-content .has-light-gray-background-color a {color: #fff;}
+.entry .entry-content .has-primary-background-color > p, .entry .entry-content .has-primary-background-color > h1, .entry .entry-content .has-primary-background-color > h2, .entry .entry-content .has-primary-background-color > h3, .entry .entry-content .has-primary-background-color > h4, .entry .entry-content .has-primary-background-color > h5, .entry .entry-content .has-primary-background-color > h6, .entry .entry-content .has-primary-background-color > a, .entry .entry-content .has-secondary-background-color > p, .entry .entry-content .has-secondary-background-color > h1, .entry .entry-content .has-secondary-background-color > h2, .entry .entry-content .has-secondary-background-color > h3, .entry .entry-content .has-secondary-background-color > h4, .entry .entry-content .has-secondary-background-color > h5, .entry .entry-content .has-secondary-background-color > h6, .entry .entry-content .has-secondary-background-color > a, .entry .entry-content .has-dark-gray-background-color > p, .entry .entry-content .has-dark-gray-background-color > h1, .entry .entry-content .has-dark-gray-background-color > h2, .entry .entry-content .has-dark-gray-background-color > h3, .entry .entry-content .has-dark-gray-background-color > h4, .entry .entry-content .has-dark-gray-background-color > h5, .entry .entry-content .has-dark-gray-background-color > h6, .entry .entry-content .has-dark-gray-background-color > a, .entry .entry-content .has-light-gray-background-color > p, .entry .entry-content .has-light-gray-background-color > h1, .entry .entry-content .has-light-gray-background-color > h2, .entry .entry-content .has-light-gray-background-color > h3, .entry .entry-content .has-light-gray-background-color > h4, .entry .entry-content .has-light-gray-background-color > h5, .entry .entry-content .has-light-gray-background-color > h6, .entry .entry-content .has-light-gray-background-color > a {color: #fff;}
 .entry .entry-content .has-white-background-color {color: #111;}
-.entry .entry-content .has-white-background-color p, .entry .entry-content .has-white-background-color h1, .entry .entry-content .has-white-background-color h2, .entry .entry-content .has-white-background-color h3, .entry .entry-content .has-white-background-color h4, .entry .entry-content .has-white-background-color h5, .entry .entry-content .has-white-background-color h6, .entry .entry-content .has-white-background-color a {color: #111;}
+.entry .entry-content .has-white-background-color > p, .entry .entry-content .has-white-background-color > h1, .entry .entry-content .has-white-background-color > h2, .entry .entry-content .has-white-background-color > h3, .entry .entry-content .has-white-background-color > h4, .entry .entry-content .has-white-background-color > h5, .entry .entry-content .has-white-background-color > h6, .entry .entry-content .has-white-background-color > a {color: #111;}
 .entry .entry-content .has-primary-background-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-primary-background-color {background-color: #0073aa;}
 .entry .entry-content .has-secondary-background-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-secondary-background-color {background-color: #005177;}
 .entry .entry-content .has-dark-gray-background-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-dark-gray-background-color {background-color: #111;}
 .entry .entry-content .has-light-gray-background-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-light-gray-background-color {background-color: #767676;}
 .entry .entry-content .has-white-background-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-white-background-color {background-color: #fff;}
-.entry .entry-content .has-primary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color p {color: #0073aa;}
-.entry .entry-content .has-secondary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color p {color: #005177;}
-.entry .entry-content .has-dark-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color p {color: #111;}
-.entry .entry-content .has-light-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-light-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-light-gray-color p {color: #767676;}
+.entry .entry-content .has-primary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color > p {color: #0073aa;}
+.entry .entry-content .has-secondary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color > p {color: #005177;}
+.entry .entry-content .has-dark-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color > p {color: #111;}
+.entry .entry-content .has-light-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-light-gray-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-light-gray-color > p {color: #767676;}
 .entry .entry-content .has-white-color, .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-white-color {color: #fff;}
 .page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {border: none;margin-bottom: 0;margin-top: 0;padding: 0;}
 embed, iframe, object {max-width: 100%;}
