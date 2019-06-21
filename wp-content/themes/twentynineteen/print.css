@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media print {@page {margin: 2cm;}
 	.entry {margin-top: 1em;}
 	.entry .entry-header, .site-footer .site-info {margin: 0;}
